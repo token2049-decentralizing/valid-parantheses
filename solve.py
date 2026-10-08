@@ -7,4 +7,4 @@ def isValid(s: str) -> bool:
                 return False
         else:
             stack.append(ch)
-    return True  # BUG: ignores unclosed brackets like "(("
+    return not stack
